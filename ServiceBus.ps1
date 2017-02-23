@@ -43,7 +43,6 @@ Get-AzureSubscription -SubscriptionName $SubscriptionName |Select-AzureSubscript
 
 Start-Transcript -path ServiceBusResult.txt -append
 $sb = Get-AzureSBNamespace
-#$sb1 = $sb | where {$_.name.contains("tntpbsappsb")}
 $sb1 = $sb | where {$_.name.contains("$SBNameSpace")}
 $sbcs = $sb1.ConnectionString
 
