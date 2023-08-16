@@ -1,9 +1,9 @@
 $parameters = $args[0]
 # Function to check Input folder not holds files older than Input hour(s).
 
-Function CheckFileAge
-{
-    Param([String] $Targetfolder, [Int] $Hours)
+#Function CheckFileAge
+#{
+#    Param([String] $Targetfolder, [Int] $Hours)
 
 $Now = Get-Date
 
@@ -18,4 +18,4 @@ Foreach($File in $Files)
    #Remove-Item $File.FullName -force -Verbose 2>&1 4>&1 | Out-File $Logfile -append
    $File.FullName
   }
-}
+#}
