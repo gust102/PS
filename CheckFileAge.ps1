@@ -1,3 +1,4 @@
+$parameters = $args[0]
 # Function to check Input folder not holds files older than Input hour(s).
 
 Function CheckFileAge
